@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes de Examenes Diagnóstico</title>
+
+    <!-- Incluir estilos de la pagina principal -->
+    <link rel="stylesheet" href="./src/css/styles.css">
+    
+    <!-- Incluir estilos de las tablas que se volveran imagenes -->
+    <link rel="stylesheet" href="./src/css/table_style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <img class="logo" src="./src/img/logo.png" alt="Hound Express Logo">
+    </header>
+
+    <main class="main-content">
+        <div class="function">
+            <h2 class="animated-title">Diagnósticos</h2>
+            <div class="drop">
+                <label for="input-1" class="drop-area" id="dp1">
+                    <input type="file" id="input-1" input="input-1" accept=".xlsx" hidden>
+                    <img class="icon" src="./src/img/icon.png" alt="upload icon">
+                    <p class="info">Arrastra tu archivo o da click aquí</p>
+                </label>
+            </div>
+        </div>
+
+        <div class="function">
+            <h2 class="animated-title">Español</h2>
+            <div class="drop">
+                <label for="input-2" class="drop-area" id="dp2">
+                    <input type="file" id="input-2" input="input-2" accept=".xlsx" hidden>
+                    <img class="icon" src="./src/img/icon.png" alt="upload icon">
+                    <p class="info">Arrastra tu archivo o da click aquí</p>
+                </label>
+            </div>
+        </div>
+
+        <div class="function">
+            <h2 class="animated-title">Inglés</h2>
+            <div class="drop">
+                <label for="input-3" class="drop-area" id="dp3">
+                    <input type="file" id="input-3" input="input-3" accept=".xlsx" hidden>
+                    <img class="icon" src="./src/img/icon.png" alt="upload icon">
+                    <p class="info">Arrastra tu archivo o da click aquí</p>
+                </label>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <!-- Incluir la librería de SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+
+    <!-- Incluir la librería de html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <!-- Incluir la librería JSZip -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <!-- Incluir el script que transforma las tabla a imagenes -->
+    <script src="./src/js/downloadBtn.js"></script>
+    
+    <!-- Incluir el script que le da funcionalidad al drag and drop area -->
+    <script src="./src/js/dropArea.js"></script>
+</body>
+</html>
